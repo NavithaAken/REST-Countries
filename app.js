@@ -2,7 +2,7 @@ let countriesArrayList = [];
 let index = 0;
 
 function loadCountries(searchQuery = null) {
-    let fetchUrl = "/countries.json";
+    let fetchUrl = "https://restcountries.com/v3.1/all";
     if (searchQuery) {
         fetchUrl = `https://restcountries.com/v3.1/name/${searchQuery}`;
     }
